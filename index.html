@@ -12,13 +12,14 @@
 </head>
 <body>
 <header>
+   <div class="navbar">
     <div class="container">
-        <div class="navbar">
+        
             <a href="" class="logo">LOGO</a>
             <button class="hamburger">&#9776;</button>            
             <nav class="nav">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Workplace</a></li>
@@ -27,7 +28,7 @@
             </nav>
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Workplace</a></li>
@@ -37,10 +38,13 @@
         </div>
     </div>
 </header>
-<section class="banner">
+<section class="banner" id="home">
     <div class="container">
-        <h1>Kamil Bała</h1>
-        <h2>Front End Developer</h2>
+       <div class="banner-content">
+           <h1>TEKST H1</h1>
+           <h2>TEKST H2</h2>
+       </div>
+        
     </div>
 </section>
 <section class="about" id="about">
@@ -82,7 +86,7 @@
 <script>
 
 $( ".hamburger" ).click(function() {
-$( "ul" ).slideToggle( "slow", function() {
+$( ".nav ul" ).slideToggle( "slow", function() {
 });
 });
 $(".nav a").click(function(){

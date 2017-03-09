@@ -1,0 +1,146 @@
+@import 'helpers.less';
+body {
+    
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+header {    
+    background: @header-bg;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    box-sizing: border-box;
+    height: 40px;
+    .logo {
+        float: left;
+        line-height: 40px;
+    }
+    .navbar {
+        border-bottom: 2px solid @nav-border;
+    }
+}
+
+.hamburger {
+    display: none;
+    
+    
+}
+.navbar {
+    
+    height: 40px;
+}
+.desktop-nav {
+    
+    float: right;
+    ul {
+        list-style-type: none;
+        line-height: 40px;
+        li {
+            display: inline-block;
+            background: blue;
+            a {
+                color: red;
+                height: 40px;
+                background: blue;
+                padding: 0 20px;
+                display: block;
+                text-decoration: none;
+                
+                &:hover {
+                    background: red;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+.nav {
+    display: none;
+}
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+    .hamburger {
+        float: right;
+        display: block;
+        background: blue;
+        color: red;
+        height: 30px;
+        width: 40px;
+        padding: 3px;
+        line-height: 20px;
+        font-size: 20px;
+        margin-right: 5px;
+        margin-top: 5px;
+        border: 2px solid red;
+    }
+.nav {
+    
+    display: block;
+    float: right;
+    position: absolute;
+    top: 40px;    
+    width: 100%;
+    left: 0;
+    right: 0;    
+    ul {        
+        border-top-width: 50%;
+        background: @header-bg;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: none; 
+        list-style-type: none;
+        padding: 5px 15px;        
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 2px solid @nav-border;
+        border-top: none;
+        li { 
+            text-align: center; 
+            
+            a {
+                background: #cecece;
+                 margin-bottom: 5px;
+                border-radius: 5px;
+                padding: 10px 15px;
+                color: red;
+                display: block;
+                text-decoration: none;
+            }
+            &:hover {                
+                
+                a {
+                    color: blue;
+                    background: red;
+                }
+            }
+        }
+    }
+}
+}
+
+.banner {
+    background: red;
+    margin-top: 40px;
+    height: 50vh;
+    text-align: center;
+    width: 100%;
+    .banner-content {
+        
+        padding-top: 15vh;
+        
+    }
+}
+.about {
+    height: 50vh;
+}
+.section-title {
+    padding-top: 40px;
+    text-align: center;
+}
