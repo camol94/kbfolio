@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>KamilBała Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--STYLE-->
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="navbar">
+            <a href="" class="logo">LOGO</a>
+            <button class="hamburger">&#9776;</button>            
+            <nav class="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Workplace</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Workplace</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="banner">
+    <div class="container">
+        <h1>Kamil Bała</h1>
+        <h2>Front End Developer</h2>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-title">Sekcja About</div>
+        <div class="section-content">CONTENT SEKCJI ABOUT</div>
+    </div>
+</section>
+<section class="skills" id="skills">
+    <div class="container">
+        <div class="section-title">Sekcja Narzędzia</div>
+        <div class="section-content">CONTENT SEKCJI NARZĘDZIA</div>
+    </div>
+</section>
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-title">Sekcja Portfolio</div>
+        <div class="section-content">CONTENT SEKCJI PORTFOLIO</div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-title">Sekcja Kontakt</div>
+        <div class="section-content">CONTENT SEKCJI KONTAKT</div>
+    </div>
+</section>
+<footer>
+    <section class="footer-main">
+        <div class="container">
+            FOOTER MAIN
+        </div>
+    </section>
+    <section class="footer-copy">
+        <div class="container">
+            FOOTER COPY
+        </div>
+    </section>
+</footer>
+<script>
+
+$( ".hamburger" ).click(function() {
+$( "ul" ).slideToggle( "slow", function() {
+});
+});
+$(".nav a").click(function(){
+    $(".nav ul").slideToggle("slow", function() {
+        
+    });
+});
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
