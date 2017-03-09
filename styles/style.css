@@ -5,19 +5,26 @@
   padding: 0 10px;
 }
 header {
-  background: #F0F2F3;
+  background: gray;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  box-sizing: border-box;
   height: 40px;
 }
 header .logo {
   float: left;
   line-height: 40px;
 }
+header .navbar {
+  border-bottom: 2px solid green;
+}
 .hamburger {
   display: none;
+}
+.navbar {
+  height: 40px;
 }
 .desktop-nav {
   float: right;
@@ -74,7 +81,7 @@ header .logo {
   }
   .nav ul {
     border-top-width: 50%;
-    background: #F0F2F3;
+    background: gray;
     margin-left: 5px;
     margin-right: 5px;
     display: none;
@@ -82,6 +89,8 @@ header .logo {
     padding: 5px 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: 2px solid green;
+    border-top: none;
   }
   .nav ul li {
     text-align: center;
@@ -101,8 +110,19 @@ header .logo {
   }
 }
 .banner {
+  background: red;
   margin-top: 40px;
+  height: 50vh;
+  text-align: center;
+  width: 100%;
+}
+.banner .banner-content {
+  padding-top: 15vh;
+}
+.about {
+  height: 50vh;
 }
 .section-title {
   padding-top: 40px;
+  text-align: center;
 }
