@@ -1,6 +1,6 @@
 @import 'helpers.less';
 body {
-    
+ 
 }
 .container {
     max-width: 1200px;
@@ -8,27 +8,25 @@ body {
     padding: 0 10px;
 }
 header {    
-    background: @header-bg;    
+    background: #ffffff;  
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0;    
     
-    box-sizing: border-box;
     height: 40px;
     .logo {
         float: left;
         line-height: 40px;
     }
     .navbar {
-        border-bottom: 2px solid @nav-border;
+        border-bottom: 2px solid gray;
     }
 }
 
 .hamburger {
-    display: none;
-    
-    
+    display: none;    
 }
 .navbar {
     
@@ -36,18 +34,17 @@ header {
 }
 .desktop-nav {
     
-    float: right;
-    ul {
+    text-align: center;
+    ul {        
         list-style-type: none;
         line-height: 40px;
         li {
             display: inline-block;
-            background: blue;
+            
             a {
-                color: red;
+                color: #000000;
                 height: 40px;
-                background: blue;
-                padding: 0 20px;
+                padding: 0 14px;
                 display: block;
                 text-decoration: none;
                 
@@ -126,14 +123,25 @@ header {
 }
 
 .banner {
-    background: red;
-    margin-top: 40px;
-    height: 50vh;
+    
     text-align: center;
+    margin-top: 40px;
     width: 100%;
+    background: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     .banner-content {
-        
-        padding-top: 15vh;
+        padding: 15% 0;
+        max-height: 100vh;        
+        background: rgba(0, 0, 0, 0.66);
+        color: white;
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 27px;
+        }
         
     }
 }
@@ -143,4 +151,17 @@ header {
 .section-title {
     padding-top: 40px;
     text-align: center;
+}
+
+.skills {
+    
+    i {
+        font-size: 90px;
+        
+        color: red;
+        &:hover {
+            text-shadow: -2px -2px 2px blue, 2px -2px 2px blue, -2px 2px 2px blue, 2px 2px 2px blue;
+            color: white;
+        }
+    }
 }
