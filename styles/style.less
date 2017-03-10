@@ -145,23 +145,49 @@ header {
         
     }
 }
-.about {
-    height: 50vh;
+section:nth-of-type(3), section:nth-of-type(5) {
+    background: gray;
+}
+section:nth-of-type(2), section:nth-of-type(4) {
+    background: #746969;
 }
 .section-title {
     padding-top: 40px;
+    font-size: 29px;
     text-align: center;
 }
+.about {
+    height: 50vh;
+}
+
 
 .skills {
     
-    i {
-        font-size: 90px;
-        
-        color: red;
-        &:hover {
-            text-shadow: -2px -2px 2px blue, 2px -2px 2px blue, -2px 2px 2px blue, 2px 2px 2px blue;
-            color: white;
+    ul {
+        text-align: center;
+        li {          
+            display: inline-block;
+            padding: 25px;
         }
     }
+    i {
+        font-size: 90px;        
+        color: red;
+        
+        transition: all ease-in 0.5s;
+        &:hover {           
+            color: blue;           
+        }
+    }
+}
+.contact {
+    
+}
+.footer-main {
+    background: #484848;
+}
+.footer-copy {
+    text-align: center;
+    background: #212121;
+    color: #fff;
 }

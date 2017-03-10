@@ -128,18 +128,42 @@ header .navbar {
 .banner .banner-content h2 {
   font-size: 27px;
 }
-.about {
-  height: 50vh;
+section:nth-of-type(3),
+section:nth-of-type(5) {
+  background: gray;
+}
+section:nth-of-type(2),
+section:nth-of-type(4) {
+  background: #746969;
 }
 .section-title {
   padding-top: 40px;
+  font-size: 29px;
   text-align: center;
+}
+.about {
+  height: 50vh;
+}
+.skills ul {
+  text-align: center;
+}
+.skills ul li {
+  display: inline-block;
+  padding: 25px;
 }
 .skills i {
   font-size: 90px;
   color: red;
+  transition: all ease-in 0.5s;
 }
 .skills i:hover {
-  text-shadow: -2px -2px 2px blue, 2px -2px 2px blue, -2px 2px 2px blue, 2px 2px 24px blue;
-  color: white;
+  color: blue;
+}
+.footer-main {
+  background: #484848;
+}
+.footer-copy {
+  text-align: center;
+  background: #212121;
+  color: #fff;
 }
