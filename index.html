@@ -5,10 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--STYLE-->
+
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="stylesheet" href="styles/main.css" type="text/css">
-<!--    devicon-->
+<!--    hexagons css-->
+   <link rel="stylesheet" href="styles/hexagons.css" type="text/css">
+<!--   hexagons js-->
+    <script src="js/hexagons.js"></script>
+    <!--    devicon-->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       
 </head>
@@ -39,17 +46,18 @@
     </div>
 </header>
 <section class="banner">    
-    <div class="banner-content">
-        <div class="container">
-            <h1>Kamil Bała</h1>
-           <h2>TEKST H2</h2>
-       </div>        
+    <div class="banner-content">        
+        <h1>Kamil Bała</h1>
+           <h2>TEKST H2</h2>             
     </div>
 </section>
 <section class="about" id="about">
     <div class="container">
         <div class="section-title">O mnie</div>
-        <div class="section-content">CONTENT SEKCJI ABOUT</div>
+        <div class="section-content">
+            <p>Witam! Nazywam się Kamil Bała</p>
+            <p>Już od wczesnych lat szkolnych interesowałem się stronami internetowymi, zaczynałem od robienia prostych stron opartych na tabelkach, jednak z czasem zajawka na programowanie minęła. Teraz gdy jestem już 23 letnim facetem znów pojawiła się ochota na "robienie internetów". Od kilku miesięcy uczę się HTML, CSS oraz LESS, a od niedawna zacząłem również troszkę JavaScript oraz jQuery.</p>
+        </div>
     </div>
 </section>
 <section class="skills" id="skills">
@@ -58,17 +66,18 @@
         <div class="section-content">
             <h3>Podczas mojej pracy korzystam z:</h3>
             <ul>
-                <li><i class="devicon-html5-plain-wordmark"></i></li>
-                <li><i class="devicon-css3-plain-wordmark"></i></li>
-                <li><i class="devicon-github-plain-wordmark"></i></li>
-                <li><i class="devicon-less-plain-wordmark"></i></li>
-                <li><i class="devicon-jquery-plain-wordmark"></i></li>
-                <li><i class="devicon-bootstrap-plain-wordmark"></i></li>
+                <li><span class="hb hb-md hb-custom"><i class="devicon-html5-plain-wordmark"></i></span></li>
+                <li><span class="hb hb-md hb-custom"><i class="devicon-css3-plain-wordmark"></i></span></li>
+                <li><span class="hb hb-md hb-custom"><i class="devicon-github-plain-wordmark"></i></span></li>
+                <li><span class="hb hb-md hb-custom"><i class="devicon-less-plain-wordmark"></i></span></li>
+                <li><span class="hb hb-md hb-custom"><i class="devicon-jquery-plain-wordmark"></i></span></li>
+                <li><span class="hb hb-md hb-custom"><i class="devicon-bootstrap-plain-wordmark"></i></span></li>
+                <li><span class="hb hb-md hb-custom"><i class="devicon-wordpress-plain-wordmark"></i></span></li>
             </ul>
             <h3>W przyszłości chciałbym nauczyć się:</h3>
             <ul>
-                <li><i class="devicon-ruby-plain-wordmark"></i></li>
-                <li><i class="devicon-rails-plain-wordmark"></i></li>                
+                <li><span class="hb hb-md hb-custom"><i class="devicon-ruby-plain-wordmark"></i></span></li>
+                <li><span class="hb hb-md hb-custom"><i class="devicon-rails-plain-wordmark"></i></span></li>                
             </ul>
         </div>
     </div>
@@ -76,19 +85,60 @@
 <section class="portfolio" id="portfolio">
     <div class="container">
         <div class="section-title">Realizacje</div>
-        <div class="section-content">CONTENT SEKCJI PORTFOLIO</div>
+        <div class="section-content">
+           <div class="single-col">
+              <img src="images/port3.png">
+               <div class="portfolio-item">
+                   <div class="portfolio-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente molestiae vel soluta?</div>
+                   <div class="portfolio-title">psd to html
+                   <div class="portfolio-icons"><a href="#"><i class="fa fa-link"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                   </div>                   
+               </div>
+           </div>
+           <div class="single-col">
+              <img src="images/port2.png">
+               <div class="portfolio-item">
+                   <div class="portfolio-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente molestiae vel soluta?</div>
+                   <div class="portfolio-title">psd to html
+                   <div class="portfolio-icons"><a href="#"><i class="fa fa-link"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                   </div>                   
+               </div>
+           </div>
+           <div class="single-col">
+              <img src="images/port3.png">
+               <div class="portfolio-item">
+                   <div class="portfolio-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente molestiae vel soluta?</div>
+                   <div class="portfolio-title">psd to html
+                   <div class="portfolio-icons"><a href="#"><i class="fa fa-link"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                   </div>                   
+               </div>
+           </div>
+           <div class="single-col">
+              <img src="images/port1.png">
+               <div class="portfolio-item">
+                   <div class="portfolio-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente molestiae vel soluta?</div>
+                   <div class="portfolio-title">psd to html
+                   <div class="portfolio-icons"><a href="#"><i class="fa fa-link"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                   </div>                   
+               </div>
+           </div>
+        </div>
     </div>
 </section>
 <section class="contact" id="contact">
     <div class="container">
         <div class="section-title">Kontakt</div>
-        <div class="section-content">CONTENT SEKCJI KONTAKT</div>
+        <div class="section-content">
+            Aby się ze mną skontaktować napisz do mnie na meila komodres(at)gmail.com, możesz również napisać do mnie wiadomość na portalu FaceBook, lub LinkedIn. Odnośniki do moich profilii znajdziesz poniżej.
+        </div>
     </div>
 </section>
 <footer>
     <div class="footer-main">
         <div class="container">
-            FOOTER MAIN
+                <a href="#" target="_blank"><span class="hb hb-xs spin-icon hb-facebook"><i class="fa fa-facebook"></i></span></a>
+				<a href="" target="_blank"><span class="hb hb-xs spin-icon hb-facebook"><i class="fa fa-github-square"></i></span></a> 
+				<a href="" target="_blank"><span class="hb hb-xs spin-icon hb-facebook"><i class="fa fa-envelope-o"></i></span></a>
         </div>
     </div>
     <div class="footer-copy">

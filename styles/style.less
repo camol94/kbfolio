@@ -1,10 +1,27 @@
 @import 'helpers.less';
+@import 'grid.less';
+// siatka kolumn
+@columns: 12;
+@column-width: 65;
+@gutter-width: 0;
+@total-width: 100%;
+
+.portfolio .single-col {
+	.column(12);
+    @media @phone {
+        .column(6);
+    }
+	@media @tablet {
+		.column(4);
+	}
+}
 body {
  
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    clear: both;
     padding: 0 10px;
 }
 header {    
@@ -122,8 +139,7 @@ header {
 }
 }
 
-.banner {
-    
+.banner {    
     text-align: center;
     margin-top: 40px;
     width: 100%;
@@ -131,16 +147,23 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 400px;
     .banner-content {
-        padding: 15% 0;
-        max-height: 100vh;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
         background: rgba(0, 0, 0, 0.66);
         color: white;
         h1 {
             font-size: 36px;
+            
         }
         h2 {
             font-size: 27px;
+            
         }
         
     }
@@ -157,12 +180,14 @@ section:nth-of-type(2), section:nth-of-type(4) {
     text-align: center;
 }
 .about {
-    height: 50vh;
+    padding-bottom: 40px;
+    p {
+        text-align: justify;
+    }
 }
 
 
-.skills {
-    
+.skills {    
     ul {
         text-align: center;
         li {          
@@ -171,8 +196,8 @@ section:nth-of-type(2), section:nth-of-type(4) {
         }
     }
     i {
-        font-size: 90px;        
-        color: red;
+        font-size: 80px;        
+        color: #3c4757;
         
         transition: all ease-in 0.5s;
         &:hover {           
@@ -180,14 +205,93 @@ section:nth-of-type(2), section:nth-of-type(4) {
         }
     }
 }
-.contact {
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.portfolio {
+    overflow: auto;
+    padding-bottom: 25px;
+    img {
+        width: 100%;
+        max-height: 280px;
+        border: 5px solid rgba(0,0,0,.3);
+        box-sizing: border-box;
+    }
+    .single-col {
+        
+        
+        position: relative;
+        box-sizing: border-box;
+    }
+    .portfolio-item {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 7px;
+        opacity: 0;
+        border: 20px solid rgba(0,0,0,.1);
+        background: rgba(255, 255, 255, 0.8);
+        
+        text-align: center;
+        transition: all 0.5s;
+        
+        &:hover {
+            opacity: 1;
+        }
+        .portfolio-info {
+            padding: 10px;
+        }
+        .portfolio-title {
+            position: absolute;
+            background: rgba(0,0,0,0.3);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 5px;
+            .portfolio-icons {
+            position: absolute;
+            bottom: 0;
+                left: 0;
+                right: 0;
+            a:nth-of-type(1) {
+                float: left;
+                margin-left: 10px;
+                
+            }
+            a:nth-of-type(2) {
+                float: right;
+            }
+            i {
+                float: left;
+                font-size: 25px;
+                margin-right: 10px;
+                padding-bottom: 3px;
+                
+                
+            }
+        }
+        }
+        
+    }
     
+}
+.contact {
+    text-align: center;
 }
 .footer-main {
     background: #484848;
+    display: flex;
+    
 }
 .footer-copy {
     text-align: center;
     background: #212121;
     color: #fff;
+}
+
+.block {
+    background: red;
 }
